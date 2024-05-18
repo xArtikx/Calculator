@@ -4,6 +4,8 @@
  */
 package calculator;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 
@@ -290,8 +292,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        ArrayList<Operation> operationHistory = this.history.getOperations();
+        Collections.reverse(this.history.getOperations());
+        
         DefaultListModel model = new DefaultListModel();
-        model.addAll(this.history.getOperations());
+        model.addAll(operationHistory);
         jList1.setModel(model);
     }//GEN-LAST:event_jButton7ActionPerformed
 

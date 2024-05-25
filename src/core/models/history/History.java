@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package calculator;
+package core.models.history;
 
 import java.util.ArrayList;
 
@@ -11,19 +7,26 @@ import java.util.ArrayList;
  * @author edangulo
  */
 public class History {
-    
-    private ArrayList<Operation> operations;
 
-    public History() {
+    private static History instance;
+    private final ArrayList<String> operations;
+
+    private History() {
         this.operations = new ArrayList<>();
     }
-    
-    public void addOperation(Operation operation) {
+
+    public static History getInstance() {
+        if (instance == null) {
+            instance = new History();
+        }
+        return instance;
+    }
+
+    public void addOperation(String operation) {
         this.operations.add(operation);
     }
 
-    public ArrayList<Operation> getOperations() {
+    public ArrayList<String> getOperations() {
         return operations;
     }
-    
 }

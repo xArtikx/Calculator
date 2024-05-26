@@ -33,5 +33,4 @@ public abstract class Operation {
     public String getResult() {
         return result;
     }
-
 }

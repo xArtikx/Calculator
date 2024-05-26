@@ -23,7 +23,6 @@ public class ResponseShared {
             if (!dc.isValid(a)) {
                 return new Response("Number 1 has more than 3 decimals", Status.BAD_REQUEST);
             }
-
             if (b.equals("")) {
                 return new Response("Number 2 must be not empty", Status.BAD_REQUEST);
             }
@@ -45,7 +44,6 @@ public class ResponseShared {
     //Se le añade la verificación de la división entre 0
     public static Response responseType2(String a, String b) {
         try {
-
             if (a.equals("")) {
                 return new Response("Number 1 must be not empty", Status.BAD_REQUEST);
             }
@@ -57,7 +55,6 @@ public class ResponseShared {
             if (!dc.isValid(a)) {
                 return new Response("Number 1 has more than 3 decimals", Status.BAD_REQUEST);
             }
-
             if (b.equals("")) {
                 return new Response("Number 2 must be not empty", Status.BAD_REQUEST);
             }

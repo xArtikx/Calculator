@@ -19,5 +19,4 @@ public class DivisionController implements OperationController {
     public Division getOperation(double number1, double number2) {
         return new Division(number1, number2);
     }
-
 }

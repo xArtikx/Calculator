@@ -19,5 +19,4 @@ public class PotenciationController implements OperationController {
     public Potenciation getOperation(double number1, double number2) {
         return new Potenciation(number1, number2);
     }
-
 }

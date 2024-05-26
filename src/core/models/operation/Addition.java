@@ -11,5 +11,4 @@ public class Addition extends Operation {
         result = String.format("%.3f", number1 + number2).replaceAll(",", ".");
         operator = "+";
     }
-
 }

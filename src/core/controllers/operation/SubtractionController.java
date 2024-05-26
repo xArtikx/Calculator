@@ -19,5 +19,4 @@ public class SubtractionController implements OperationController {
     public Subtraction getOperation(double number1, double number2) {
         return new Subtraction(number1, number2);
     }
-
 }

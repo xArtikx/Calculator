@@ -16,5 +16,4 @@ public interface OperationController {
 
     Operation
             getOperation(double number1, double number2);
-
 }

@@ -19,5 +19,4 @@ public class MultiplicationController implements OperationController {
     public Multiplication getOperation(double number1, double number2) {
         return new Multiplication(number1, number2);
     }
-
 }

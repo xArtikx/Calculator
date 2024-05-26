@@ -20,7 +20,6 @@ public class CalculatorFrame extends javax.swing.JFrame {
      */
     public CalculatorFrame() {
         initComponents();
-
     }
 
     /**
@@ -231,11 +230,8 @@ public class CalculatorFrame extends javax.swing.JFrame {
             } else if (ac.getResponse(number1, number2).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
-
                 HistoryController.addOperation(ac.getOperation(a, b));
-
                 ResultField.setText(ac.getOperation(a, b).getResult());
-
             }
         }
     }//GEN-LAST:event_AdditionButtonActionPerformed
@@ -252,19 +248,14 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
-
             double result = Double.parseDouble(sc.getOperation(a, b).getResult());
-
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
-
                 HistoryController.addOperation(sc.getOperation(a, b));
-
                 ResultField.setText(sc.getOperation(a, b).getResult());
-
             }
         }
     }//GEN-LAST:event_SubstractionButtonActionPerformed
@@ -281,18 +272,14 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
-
             double result = Double.parseDouble(mc.getOperation(a, b).getResult());
-
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
                 HistoryController.addOperation(mc.getOperation(a, b));
-
                 ResultField.setText(mc.getOperation(a, b).getResult());
-
             }
         }
     }//GEN-LAST:event_MultiplicationButtonActionPerformed
@@ -309,18 +296,14 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
-
             double result = Double.parseDouble(dc.getOperation(a, b).getResult());
-
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
                 HistoryController.addOperation(dc.getOperation(a, b));
-
                 ResultField.setText(dc.getOperation(a, b).getResult());
-
             }
         }
     }//GEN-LAST:event_DivisionButtonActionPerformed
@@ -337,18 +320,14 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
-
             double result = Double.parseDouble(pc.getOperation(a, b).getResult());
-
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
                 HistoryController.addOperation(pc.getOperation(a, b));
-
                 ResultField.setText(pc.getOperation(a, b).getResult());
-
             }
         }
     }//GEN-LAST:event_PotencyButtonActionPerformed

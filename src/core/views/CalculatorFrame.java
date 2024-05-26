@@ -225,7 +225,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
+<<<<<<< HEAD
             double result = Double.parseDouble(ac.getOperation(a, b).getResult());
+=======
+            double result = Double.parseDouble(ac.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             if (ac.getResponse(number1, number2).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ac.getResponse(number1, number2).getStatus() >= 400) {
@@ -233,7 +237,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
             } else {
 
                 HistoryController.addOperation(ac.getOperation(a, b));
+<<<<<<< HEAD
                 ResultField.setText(ac.getOperation(a, b).getResult());
+=======
+                ResultField.setText(ac.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             }
         }
     }//GEN-LAST:event_AdditionButtonActionPerformed
@@ -250,7 +258,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
+<<<<<<< HEAD
             double result = Double.parseDouble(sc.getOperation(a, b).getResult());
+=======
+            double result = Double.parseDouble(sc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
@@ -258,7 +270,11 @@ public class CalculatorFrame extends javax.swing.JFrame {
             } else {
 
                 HistoryController.addOperation(sc.getOperation(a, b));
+<<<<<<< HEAD
                 ResultField.setText(sc.getOperation(a, b).getResult());
+=======
+                ResultField.setText(sc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             }
         }
     }//GEN-LAST:event_SubstractionButtonActionPerformed
@@ -275,14 +291,22 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
+<<<<<<< HEAD
             double result = Double.parseDouble(mc.getOperation(a, b).getResult());
+=======
+            double result = Double.parseDouble(mc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
                 HistoryController.addOperation(mc.getOperation(a, b));
+<<<<<<< HEAD
                 ResultField.setText(mc.getOperation(a, b).getResult());
+=======
+                ResultField.setText(mc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             }
         }
     }//GEN-LAST:event_MultiplicationButtonActionPerformed
@@ -299,14 +323,22 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
+<<<<<<< HEAD
             double result = Double.parseDouble(dc.getOperation(a, b).getResult());
+=======
+            double result = Double.parseDouble(dc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
                 HistoryController.addOperation(dc.getOperation(a, b));
+<<<<<<< HEAD
                 ResultField.setText(dc.getOperation(a, b).getResult());
+=======
+                ResultField.setText(dc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             }
         }
     }//GEN-LAST:event_DivisionButtonActionPerformed
@@ -323,14 +355,22 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
+<<<<<<< HEAD
             double result = Double.parseDouble(pc.getOperation(a, b).getResult());
+=======
+            double result = Double.parseDouble(pc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             if (ResultController.tooLong(result).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
                 HistoryController.addOperation(pc.getOperation(a, b));
+<<<<<<< HEAD
                 ResultField.setText(pc.getOperation(a, b).getResult());
+=======
+                ResultField.setText(pc.getOperationResult(a, b));
+>>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
             }
         }
     }//GEN-LAST:event_PotencyButtonActionPerformed

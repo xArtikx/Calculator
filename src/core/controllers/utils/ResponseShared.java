@@ -41,8 +41,10 @@ public class ResponseShared {
         }
     }
 
+
     //Response que arrojará la división
     //Se le añade la verificación de la división entre 0
+
     public static Response responseType2(String a, String b) {
         try {
 

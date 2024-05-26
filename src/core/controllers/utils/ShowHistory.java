@@ -12,8 +12,10 @@ import javax.swing.JList;
  */
 public class ShowHistory {
 
+
     //Método para mostrar el historial dentro del Jlist
     //Se usa una lista de Strings
+
     public static void showHistory(JList<String> list, History history) {
         ArrayList<String> operations = new ArrayList<>(history.getOperations());
         DefaultListModel<String> model = new DefaultListModel();

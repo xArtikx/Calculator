@@ -231,7 +231,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
             } else if (ac.getResponse(number1, number2).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
-                
+
                 HistoryController.addOperation(ac.getOperation(a, b));
                 ResultField.setText(ac.getOperationResult(a, b));
             }
@@ -256,7 +256,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
             } else if (ResultController.tooLong(result).getStatus() >= 400) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.WARNING_MESSAGE);
             } else {
-                
+
                 HistoryController.addOperation(sc.getOperation(a, b));
                 ResultField.setText(sc.getOperationResult(a, b));
             }

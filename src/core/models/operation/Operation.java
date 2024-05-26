@@ -4,7 +4,6 @@ package core.models.operation;
  *
  * @author andre
  */
-
 //Se hizo a la clase Operation como abstracta
 //Es la clase padre de las operaciones
 public abstract class Operation {

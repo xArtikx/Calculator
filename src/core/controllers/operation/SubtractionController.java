@@ -1,4 +1,3 @@
-
 package core.controllers.operation;
 
 import core.controllers.utils.Response;
@@ -20,6 +19,5 @@ public class SubtractionController implements OperationController {
     public Subtraction getOperation(double number1, double number2) {
         return new Subtraction(number1, number2);
     }
-
 
 }

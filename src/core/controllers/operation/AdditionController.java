@@ -1,4 +1,3 @@
-
 package core.controllers.operation;
 
 import core.controllers.utils.Response;
@@ -26,6 +25,5 @@ public class AdditionController implements OperationController {
     public Addition getOperation(double number1, double number2) {
         return new Addition(number1, number2);
     }
-
 
 }

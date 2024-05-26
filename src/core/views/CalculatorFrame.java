@@ -225,6 +225,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         } else {
             double a = Double.parseDouble(number1);
             double b = Double.parseDouble(number2);
+            double result = Double.parseDouble(ac.getOperation(a, b).getResult());
             if (ac.getResponse(number1, number2).getStatus() >= 500) {
                 JOptionPane.showMessageDialog(null, ResultController.tooLong(result).getMessage(), "Error " + ResultController.tooLong(result).getStatus(), JOptionPane.ERROR_MESSAGE);
             } else if (ac.getResponse(number1, number2).getStatus() >= 400) {

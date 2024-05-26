@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 
-=======
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
->>>>>>> 572cc9cc8cd8126d79b68c12b0fdc84569a4cbb5
 package core.controllers.operation;
 
 import core.controllers.utils.Response;
